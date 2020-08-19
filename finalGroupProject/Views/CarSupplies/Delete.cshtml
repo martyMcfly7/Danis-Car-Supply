@@ -1,0 +1,78 @@
+﻿<!-- created by Dani Luensman, Donna Quach, & Victor Ortiz  11/21/2019  Team Project -->
+@model finalGroupProject.Models.CarSupply
+
+@{
+    ViewData["Title"] = "Delete";
+}
+
+<h2>Delete</h2>
+
+<h3>Are you sure you want to delete this?</h3>
+<div>
+    <h4>Account Information</h4>
+    <hr />
+    <div align="center">
+        <dl class="dl-horizontal" id="details-delete">
+            <dt>
+                @Html.DisplayNameFor(model => model.fName)
+            </dt>
+            <dd>
+                @Html.DisplayFor(model => model.fName)
+            </dd>
+            <dt>
+                @Html.DisplayNameFor(model => model.lName)
+            </dt>
+            <dd>
+                @Html.DisplayFor(model => model.lName)
+            </dd>
+            <dt>
+                @Html.DisplayNameFor(model => model.address)
+            </dt>
+            <dd>
+                @Html.DisplayFor(model => model.address)
+            </dd>
+            <dt>
+                @Html.DisplayNameFor(model => model.city)
+            </dt>
+            <dd>
+                @Html.DisplayFor(model => model.city)
+            </dd>
+            <dt>
+                @Html.DisplayNameFor(model => model.state)
+            </dt>
+            <dd>
+                @Html.DisplayFor(model => model.state)
+            </dd>
+            <dt>
+                @Html.DisplayNameFor(model => model.zip)
+            </dt>
+            <dd>
+                @Html.DisplayFor(model => model.zip)
+            </dd>
+            <dt>
+                @Html.DisplayNameFor(model => model.phone)
+            </dt>
+            <dd>
+                @Html.DisplayFor(model => model.phone)
+            </dd>
+            <dt>
+                @Html.DisplayNameFor(model => model.userName)
+            </dt>
+            <dd>
+                @Html.DisplayFor(model => model.userName)
+            </dd>
+            <dt>
+                @Html.DisplayNameFor(model => model.password)
+            </dt>
+            <dd>
+                @Html.DisplayFor(model => model.password)
+            </dd>
+        </dl>
+    </div>
+
+    <form asp-action="Delete">
+        <input type="hidden" asp-for="ID" />
+        <input type="submit" value="Delete" class="btn btn-default" /> |
+        <a asp-action="Index">Back to List</a>
+    </form>
+</div>

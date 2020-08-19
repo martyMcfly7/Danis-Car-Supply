@@ -1,0 +1,23 @@
+﻿<!-- created by Dani Luensman, Donna Quach, & Victor Ortiz  11/21/2019  Team Project -->
+@{
+    ViewData["Title"] = "About";
+}
+<h2 style="font-size:1.5vw">@ViewData["Title"]</h2>
+<h3 style="font-size:1.5vw">@ViewData["Message"]</h3><br />
+
+<!--Referred to w3schools on how to position text over an imagein HTML/CSS and to make responsive text-->
+<!--https://www.w3schools.com/howto/howto_css_image_text.asp-->
+<!--https://www.w3schools.com/howto/tryit.asp?filename=tryhow_css_responsive_text-->
+<div class="container-fluid">
+    <!--Image is from Hahn Automotive-->
+    <!--https://hahnauto.com/wp-content/uploads/2017/12/front-replacement.jpg-->
+    <img src="~/images/front-replacement.jpg" alt="car parts" style="width:100%;">
+    <div class="text-center">
+        <p id="AboutUs" style="font-size: 1.5vw;">
+            Dani's Car Parts started with an assignment and a dream.
+            Working side by side with Victor Ortiz, Donna Quach and
+            Danita Luensman, we have created a store to help you find what you
+            need quickly and at the best prices.
+        </p>
+    </div>
+</div>
